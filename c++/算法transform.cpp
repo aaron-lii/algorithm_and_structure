@@ -33,7 +33,7 @@ void test01(){
 
     vector<int> v2;
     //此处要用resize，开启空间并置初值为 0
-    //如果用reverse，只是申请内存，并没有开放赋值，无法往里拷贝
+    //如果用reserve，只是申请内存，并没有开放赋值，无法往里拷贝
     v2.resize(v1.size());
 
     transform(v1.begin(), v1.end(), v2.begin(), trans);
